@@ -7,7 +7,8 @@ import {Component} from '@angular/core';
     '<p>Email :<strong>{{email}}</strong> </p>' +
     '<p>Address :{{address.city}} {{address.street}} {{address.pin}}</p>' +
     '<button (click)="toggleHobbiee()">Show Hobbies</button>' +
-    '<div *ngIf="shwHobbies"><div *ngFor="let hobby of hobbies">{{hobby}}</div></div>'
+    '<div *ngIf="shwHobbies"><div *ngFor="let hobby of hobbies">{{hobby}}</div></div>'+
+    '<form>  <label>Name :</label> <input type="text" name="name" [(ngModel)]="name" /><br />'
   })
 export class UserComponent {
   name:string;
